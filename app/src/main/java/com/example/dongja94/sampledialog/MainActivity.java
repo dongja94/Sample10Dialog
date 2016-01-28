@@ -174,6 +174,21 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
+    public void showDialogFragment(View view) {
+        MyDialogFragment f = new MyDialogFragment();
+        f.show(getSupportFragmentManager(), "dialog");
+    }
+
+    public void showListDialogFragment(View view) {
+        MyListDialogFragment f = new MyListDialogFragment();
+        f.show(getSupportFragmentManager(), "dialog");
+    }
+
+    public void showCustomDialogFragment(View view) {
+        CustomDialogFragment f = new CustomDialogFragment();
+        f.show(getSupportFragmentManager(), "dialog");
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
